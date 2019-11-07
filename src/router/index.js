@@ -7,16 +7,16 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    redirect: '/main',
+    path: '/omdb-app',
+    redirect: '/omdb-app/main',
   },
   {
-    path: '/main',
+    path: '/omdb-app/main',
     name: 'main',
     component: AppMain,
   },
   {
-    path: '/favorites',
+    path: '/omdb-app/favorites',
     name: 'favorites',
     component: AppFavorites,
   }
