@@ -15,10 +15,10 @@ const options = {
 };
 Vue.use(Toasted, options);
 
-Vue.axios.defaults.baseURL = 'http://www.omdbapi.com/';
+Vue.axios.defaults.baseURL = 'https://www.omdbapi.com/';
 Vue.axios.interceptors.request.use((config) => {
-  if(config.method === 'get'){
-    if(!config.hasOwnProperty('params')){
+  if (config.method === 'get') {
+    if (!config.hasOwnProperty('params')) {
       config.params = {};
     }
 
