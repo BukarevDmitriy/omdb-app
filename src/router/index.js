@@ -8,10 +8,10 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/omdb-app',
-    redirect: '/omdb-app/main',
+    redirect: '/omdb-app',
   },
   {
-    path: '/omdb-app/main',
+    path: '/omdb-app',
     name: 'main',
     component: AppMain,
   },
