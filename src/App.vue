@@ -11,7 +11,14 @@
   export default {
     components: {
       AppHeader,
-    }
+    },
+    watch: {
+      $route(to, from) {
+        if (to.fullPath !== from.fullPath) {
+          ym(56191582, 'hit', to.fullPath);
+        }
+      },
+    },
   }
 </script>
 
